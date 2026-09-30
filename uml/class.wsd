@@ -1,4 +1,34 @@
 @startuml class
 left to right direction
 
+
+class User{
+    -int id
+    -String name
+    -String password
+    -String about
+}
+
+class Courses{
+    -String prefix
+    -int number
+    -String name
+    -int credits
+
+}
+
+class Enrollment{
+    -int user_id
+    -String course_prefix
+    -String course-name
+    -String grade 
+
+}   
+
+
+
+
+User "1" ---> "0..*" Enrollment :has
+Enrollment "0..*" --> "1" Courses :has
+
 @enduml
