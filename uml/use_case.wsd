@@ -9,18 +9,18 @@ package GPA_Calculator{
 
 
 package Authenticate{
-    (Users) --> (Log in)
-    (Users) --> (Sign up)
-    (Sign up) ..> (Log in) : <<includes>>
+    (Users) --> (Logs in)
+    (Users) --> (Signs up)
+    (Sign up) ..> (Logs in) : <<includes>>
 }
 
 Authenticate --> :Student:
 package Functionalities{
-    (Student) --> (View Courses)
-    (Student) --> (View GPA)
-    (View GPA) .. (GPA Calculation) :<<includes>>
-    (Student) -->(Letter Grade Update Functionality)
-    (Student) --> (Course Deletion)
+    (Student) --> (Views Courses)
+    (Student) --> (Views GPA)
+    (Views GPA) .. (GPA Calculation) :<<includes>>
+    (Student) -->(Upgrades Letter Grade)
+    (Student) --> (Deletes Courses)
 }
 
 
