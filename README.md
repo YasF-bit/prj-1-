@@ -145,10 +145,17 @@ Before beginning implementation, a team representative must meet with the instru
 
 At this stage, you are NOT expected to write automated tests. Instead, you should perform manual testing, documenting your test results using the table provided below.
 
-|Functionality Tested|Date|Time|Result|
+| Functionality Tested | Date | Time | Result |
 |--|--|--|--|
-|Sign Up|99/99/23|99:99|passed|
-|...|...|...|...|
+| Sign Up - Empty Required Fields | 09/29/26 | 9:35 PM | Passed |
+| Sign Up - Password Mismatch | 09/29/26 | 9:38 PM | Passed |
+| Sign Up - Successful Signup | 09/29/26 | 9:39 PM | Passed |
+| Sign Up - Duplicate ID | 09/29/26 | 9:44 PM | Passed |
+| Login - Empty Required Fields | 09/29/26 | 9:48 PM | Passed |
+| Login - Invalid Password | 09/29/26 | 9:41 PM | Passed |
+| Login - Invalid ID | 09/29/26 | 9:49 PM | Passed |
+| Login - Valid Credentials | 09/29/26 | 9:40 PM | Passed |
+| Sign Out - Session Cleared | 09/29/26 | 9:46 PM | Passed |
 
 # Deployment Phase
 
