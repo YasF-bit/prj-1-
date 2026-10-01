@@ -1,3 +1,28 @@
 @startuml use_case
 
+left to right direction
+
+:Users:
+
+package GPA_Calculator{
+
+
+
+package Authenticate{
+    (Users) --> (Logs in)
+    (Users) --> (Signs up)
+    (Sign up) ..> (Logs in) : <<includes>>
+}
+
+Authenticate --> :Student:
+package Functionalities{
+    (Student) --> (Views Courses)
+    (Student) --> (Views GPA)
+    (Views GPA) .. (GPA Calculation) :<<includes>>
+    (Student) -->(Upgrades Letter Grade)
+    (Student) --> (Deletes Courses)
+}
+
+
+}
 @enduml
