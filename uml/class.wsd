@@ -29,6 +29,6 @@ class Enrollment{
 
 
 User "1" ---> "0..*" Enrollment :has
-Enrollment "0..*" --> "1" Courses :has
+Courses "1" --> "0..*" Enrollment :has
 
 @enduml
