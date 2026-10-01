@@ -9,7 +9,7 @@ from app import app, db
 from app.models import User, Course, Enrollment
 from app.forms import SignUpForm, LoginForm, EnrollmentForm, DeleteEnrollmentForm
 # TODO
-# from gpa_calculator_xx import calculate_gpa
+from gpa_calculator_xx import calculate_gpa
 from flask import render_template, redirect, url_for, request
 from flask_login import login_required, login_user, logout_user, current_user
 import bcrypt
@@ -39,7 +39,11 @@ def signout():
 @app.route('/enrollments')
 @login_required
 def list_enrollments():
-    return "Work in progress..."
+    enrollments = Enrollment.query.filter_by(user_id=current_user.id).all()
+    delete_form = DeleteEnrollmentForm()
+    return render_template('enrollments.html', enrollments=enrollments, delete_form=delete_form, gpa = calculate_gpa(enrollments))
+    
+    
 
 # TODO
 @app.route('/enrollments/delete/<course_prefix>/<course_number>', methods=['POST'])
