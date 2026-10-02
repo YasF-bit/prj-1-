@@ -78,4 +78,34 @@ def delete_enrollment(course_prefix, course_number):
 @app.route('/enrollments/create', methods=['GET', 'POST'])
 @login_required
 def create_enrollment():
-    return "Work in progress..."
+    form = EnrollmentForm()
+    form.course.choices = []
+    courses = Course.query.all()
+    for course in courses:
+        form.course.choices.append (
+            (
+                f'{course.prefix}|{course.number}',
+                f'{course.prefix} {course.number} - {course.name}'
+            )
+        )
+    if form.validate_on_submit():
+        course_prefix, course_number = form.course.data.split('|')
+        existing_enrollment = db.session.query(Enrollment).filter_by(
+            user_id=current_user.id,
+            course_prefix=course_prefix,
+            course_number=course_number
+        ).first()
+
+        if existing_enrollment:
+            existing_enrollment.grade = form.grade.data
+        else:
+            enrollment = Enrollment(
+                user_id=current_user.id,
+                course_prefix=course_prefix,
+                course_number=course_number,
+                grade=form.grade.data
+            )
+            db.session.add(enrollment)
+        db.session.commit()
+        return redirect(url_for('list_enrollments'))
+    return render_template('create_enrollment.html', form=form)
