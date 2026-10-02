@@ -62,7 +62,17 @@ def list_enrollments():
 @app.route('/enrollments/delete/<course_prefix>/<course_number>', methods=['POST'])
 @login_required
 def delete_enrollment(course_prefix, course_number):
-    return "Work in progress..."
+    enrollment = db.session.query(Enrollment).filter_by(
+        user_id=current_user.id,
+        course_prefix=course_prefix,
+        course_number=course_number
+    ).first()
+
+    if enrollment:
+        db.session.delete(enrollment)
+        db.session.commit()
+
+    return redirect(url_for('list_enrollments'))
 
 # TODO
 @app.route('/enrollments/create', methods=['GET', 'POST'])
