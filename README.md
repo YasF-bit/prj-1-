@@ -43,13 +43,17 @@ The project involves developing a web application that allows students to track 
 
 Estimate a schedule for this project by completing the table below. 
 
-|Phase|Task|Start|End|Duration|Deliverable|
-|---|---|---|---|---|---|
-|Modeling|Requirements Analysis|mm/dd/26|mm/dd/26|99 days|Use Case Diagram|
-|Modeling|Data Model|mm/dd/26|mm/dd/26|99 days|Class Diagram|
-|Construction|Coding|mm/dd/26|mm/dd/26|99 days|Code|
-|Construction|Testing|mm/dd/26|mm/dd/26|99 days|Test Report|
-|Deployment|Delivery|mm/dd/26|mm/dd/26|99 days|Final Commit/Push|
+|Phase|Task|PIC|Start|End|Duration|Deliverable|
+|---|---|---|---|---|---|---|
+Planning|Repository Setup|Developers + Manager|Sep/29/26|Sep/29/26|1 day|Protected Main Branch|
+|Modeling|Requirements Analysis|Documenter + Tester|Sep/29/26|Sep/29/26|1 days|Use Case Diagram|
+|Modeling|Data Model|Documenter + Tester|Sep/29/26|Sep/29/26|1 days|Class Diagram|
+Modeling|Baseline Setup & Verification|Developer|Sep/29/26|Sep/29/26|1 day|Working Baseline App|
+|Checkpoint|Instructor Review|Manager|Sep/30/26|Sep/30/26|1 days|Instructor Approval|
+|Construction|Coding|Developer 1|Oct/01/26|Oct/02/26|2 days|Implemented Features|
+|Construction|Coding|Developer 2|Oct/01/26|Oct/02/26|2 days|Implemented Features|
+|Construction|Testing & Bug Fixing|Tester+ Developer|Oct/03/26|Oct/03/26|1 days|Completed Testing Table|
+|Deployment|Delivery|Manager + Developer|Oct/04/26|Oct/04/26|1 days|Docker Image & Final Submission|
 
 ## Team Roles
 
@@ -57,7 +61,12 @@ Assign roles to each team member by completing the table below. A member may tak
 
 |Name|Role(s)|
 |--|--|
-|name|manager,developer,tester,documenter|
+|Yasemin|manager|
+|Sam|documenter|
+|Esther|developer|
+|Miles|developer|
+|Dang|tester|
+
 
 # Modeling Phase
 
