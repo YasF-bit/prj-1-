@@ -58,7 +58,12 @@ def signout():
 def list_enrollments():
     enrollments = Enrollment.query.filter_by(user_id=current_user.id).all()
     delete_form = DeleteEnrollmentForm()
-    return render_template('enrollments.html', enrollments=enrollments, delete_form=delete_form, gpa = calculate_gpa(enrollments))
+    gpa_data = [
+        {'grade': enrollment.grade, 'credits': enrollment.course.credits}
+        for enrollment in enrollments
+    ]
+    gpa = calculate_gpa(gpa_data)
+    return render_template('enrollments.html', enrollments=enrollments, delete_form=delete_form, gpa=gpa)
     
     
 
