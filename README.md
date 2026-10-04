@@ -156,6 +156,15 @@ At this stage, you are NOT expected to write automated tests. Instead, you shoul
 | Login - Invalid ID | 09/29/26 | 9:49 PM | Passed |
 | Login - Valid Credentials | 09/29/26 | 9:40 PM | Passed |
 | Sign Out - Session Cleared | 09/29/26 | 9:46 PM | Passed |
+| Create Enrollment - Course and Grade Added Successfully | 10/04/26 | N/A | Passed |
+| Courses Data Load - Course Data Loaded | 09/30/26 | N/A | Passed |
+| List Enrollment - Enrolled Courses Displayed | 10/03/26 | N/A | Passed |
+| Delete Enrollment - Removed From List and Database | 10/04/26 | N/A | Passed |
+| Delete Enrollment - Redirect After Delete | 10/04/26 | N/A | Passed |
+| GPA - A (4 Credits) = 4.00 | 10/04/26 | N/A | Passed |
+| GPA - A(4) + B(4) = 3.50 | 10/04/26 | N/A | Passed |
+| GPA - A(4) + B(4) + A(4) = 3.67 | 10/04/26 | N/A | Passed |
+| GPA - A(4) + B(4) + A(4) + C(4) = 3.25 | 10/04/26 | N/A | Passed |
 
 # Deployment Phase
 
