@@ -1,5 +1,5 @@
 import pytest
-from gpa_calculator import calculate_gpa
+from gpa_calculator_TBD import calculate_gpa
 
 
 def test_single_course_returns_its_grade_points():
