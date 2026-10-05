@@ -43,13 +43,17 @@ The project involves developing a web application that allows students to track 
 
 Estimate a schedule for this project by completing the table below. 
 
-|Phase|Task|Start|End|Duration|Deliverable|
-|---|---|---|---|---|---|
-|Modeling|Requirements Analysis|mm/dd/26|mm/dd/26|99 days|Use Case Diagram|
-|Modeling|Data Model|mm/dd/26|mm/dd/26|99 days|Class Diagram|
-|Construction|Coding|mm/dd/26|mm/dd/26|99 days|Code|
-|Construction|Testing|mm/dd/26|mm/dd/26|99 days|Test Report|
-|Deployment|Delivery|mm/dd/26|mm/dd/26|99 days|Final Commit/Push|
+|Phase|Task|PIC|Start|End|Duration|Deliverable|
+|---|---|---|---|---|---|---|
+Planning|Repository Setup|Developers + Manager|Sep/29/26|Sep/29/26|1 day|Protected Main Branch|
+|Modeling|Requirements Analysis|Documenter + Tester|Sep/29/26|Sep/29/26|1 days|Use Case Diagram|
+|Modeling|Data Model|Documenter + Tester|Sep/29/26|Sep/29/26|1 days|Class Diagram|
+Modeling|Baseline Setup & Verification|Developer|Sep/29/26|Sep/29/26|1 day|Working Baseline App|
+|Checkpoint|Instructor Review|Manager|Sep/30/26|Sep/30/26|1 days|Instructor Approval|
+|Construction|Coding|Developer 1|Oct/01/26|Oct/02/26|2 days|Implemented Features|
+|Construction|Coding|Developer 2|Oct/01/26|Oct/02/26|2 days|Implemented Features|
+|Construction|Testing & Bug Fixing|Tester+ Developer|Oct/03/26|Oct/03/26|1 days|Completed Testing Table|
+|Deployment|Delivery|Manager + Developer|Oct/04/26|Oct/04/26|1 days|Docker Image & Final Submission|
 
 ## Team Roles
 
@@ -57,7 +61,12 @@ Assign roles to each team member by completing the table below. A member may tak
 
 |Name|Role(s)|
 |--|--|
-|name|manager,developer,tester,documenter|
+|Yasemin|manager|
+|Sam|documenter|
+|Esther|developer|
+|Miles|developer|
+|Dang|tester|
+
 
 # Modeling Phase
 
@@ -136,10 +145,26 @@ Before beginning implementation, a team representative must meet with the instru
 
 At this stage, you are NOT expected to write automated tests. Instead, you should perform manual testing, documenting your test results using the table provided below.
 
-|Functionality Tested|Date|Time|Result|
+| Functionality Tested | Date | Time | Result |
 |--|--|--|--|
-|Sign Up|99/99/23|99:99|passed|
-|...|...|...|...|
+| Sign Up - Empty Required Fields | 09/29/26 | 9:35 PM | Passed |
+| Sign Up - Password Mismatch | 09/29/26 | 9:38 PM | Passed |
+| Sign Up - Successful Signup | 09/29/26 | 9:39 PM | Passed |
+| Sign Up - Duplicate ID | 09/29/26 | 9:44 PM | Passed |
+| Login - Empty Required Fields | 09/29/26 | 9:48 PM | Passed |
+| Login - Invalid Password | 09/29/26 | 9:41 PM | Passed |
+| Login - Invalid ID | 09/29/26 | 9:49 PM | Passed |
+| Login - Valid Credentials | 09/29/26 | 9:40 PM | Passed |
+| Sign Out - Session Cleared | 09/29/26 | 9:46 PM | Passed |
+| Create Enrollment - Course and Grade Added Successfully | 10/04/26 | N/A | Passed |
+| Courses Data Load - Course Data Loaded | 09/30/26 | N/A | Passed |
+| List Enrollment - Enrolled Courses Displayed | 10/03/26 | N/A | Passed |
+| Delete Enrollment - Removed From List and Database | 10/04/26 | N/A | Passed |
+| Delete Enrollment - Redirect After Delete | 10/04/26 | N/A | Passed |
+| GPA - A (4 Credits) = 4.00 | 10/04/26 | N/A | Passed |
+| GPA - A(4) + B(4) = 3.50 | 10/04/26 | N/A | Passed |
+| GPA - A(4) + B(4) + A(4) = 3.67 | 10/04/26 | N/A | Passed |
+| GPA - A(4) + B(4) + A(4) + C(4) = 3.25 | 10/04/26 | N/A | Passed |
 
 # Deployment Phase
 
