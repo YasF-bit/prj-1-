@@ -124,7 +124,7 @@ Dockerfile
 Create a public GitHub repository for your project. Add all team members as collaborators. Share the URL of your repo with your instructor:  
 
 ```
-Project's GitHub Repository: <<URL>>
+Project's GitHub Repository: https://github.com/YasF-bit/prj-1-
 ```
 
 Following software development collaboration best practices, create a **dev** branch to manage beta versions of your project. Additionally, each team member should create local temporary branches for individual development and testing tasks. Once the **dev** branch reaches a stable state, merge it into the **main** branch. The **main** branch should be protected. 
